@@ -1,0 +1,145 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Center align text by default */
+}
+
+header {
+    background-color:#4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for spacing */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper sizing */
+    margin: 5px 2px; /* Add some margin around buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+main {
+    padding: 20px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    margin-bottom: 10px;
+}
+
+.course, .offer {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    max-width: 400px; /* Optional: Limit the width for better design */
+    width: 100%; /* Make course items full width on small screens */
+    text-align: center;
+}
+
+.course h3, .offer h3 {
+    margin: 0;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+}
+
+#purchase-form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#purchase-form input, #purchase-form textarea {
+    margin-bottom: 10px;
+    width: calc(100% - 120px); /* Adjust width for padding and label space */
+    max-width: 300px;
+}
+
+#bank-details {
+    margin-top: 20px;
+}
+
+#bank-details p {
+    margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .course-container {
+        flex-direction: column; /* Stack courses vertically on small screens */
+    }
+
+    #purchase-form label {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 5px 0;
+    }
+
+    #purchase-form input, #purchase-form textarea {
+        width: 100%;
+        max-width: none; /* Remove max-width for full width on small screens */
+    }
+
+    #bank-details p {
+        text-align: left;
+    }
+}

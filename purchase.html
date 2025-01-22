@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Purchase Course</h1>
+    </header>
+    <main>
+        <section id="purchase">
+            <h2>Course Details</h2>
+            <p id="course-name"></p>
+            <p id="course-description"></p>
+            <p id="course-price"></p>
+            <form id="purchase-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="address">Address:
+                    (include your payment bank name)</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br><br>
+                <p>Total Cost: ₹<span id="total-cost"></span></p>
+                <div id="bank-details">
+                    <h3>Bank Account Details for Payment</h3>
+                    <p>Account Name: DM ENGINEERS SALES & SERVICES</p>
+                    <p>Bank: Karnataka Bank</p>
+                    <p>Account Number: 2612000100250801</p>
+                    <p>IFSC Code: KARB0000261</p>
+                </div>
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coder Class</p>
+    </footer>
+    <script src="purchase.js"></script>
+</body>
+</html>
